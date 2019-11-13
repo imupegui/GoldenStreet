@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>GOLDENSTREET: No solo encuentras ropa si no tu estilo.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link rel="shortcut icon" href="images/logo-ConvertImage.ico">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/form.css" rel="stylesheet" type="text/css" media="all"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href='css/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css" th:href="@{/css/index.css}">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="banner jarallax">
+		<div class="header">
+			<div class="header-left">
+				<div class="search-grid">
+				</div>
+			</div>
+		</div>
+		<div class="w3-header-bottom">
+			<div class="w3layouts-logo">
+				<img src="images/logo.png" height="60" alt="">
+			</div>
+			<div class="top-nav">
+				<nav class="navbar navbar-default">
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="first-list"><a class="active" href="index.html">INICIO</a></li>
+							<li><a href="#welcome" class="scroll">COMPRA</a></li>
+							<li><a href="#about" class="scroll">REGISTRATE</a></li>
+							<li><a href="#about" class="scroll" data-toggle="modal"
+									data-target="#exampleModal">INGRESAR</a></li>
+						</ul>
+
+
+
+						<!--<button type="button" class="btn btn-danger btn-lg btn-rounded text-lg" data-toggle="modal"
+						data-target="#exampleModal"><i class="fab local_atm fa-2x pr-2"
+							aria-hidden="true"></i>REGISTRATE</button>-->
+					</div>
+				</nav>
+			</div>
+
+			<div class="agileinfo-social-grids">
+				<ul>
+					<li><a href=""><i class="fa fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa fa-twitter"></i></a></li>
+					<li><a href=""><i class="fa fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+			<br>
+			<br>
+		</div>
+		<div class="banner-info">
+			<div class="container">
+				<div class="w3-banner-info">
+					<div class="slider">
+						<div class="callbacks_container">
+							<div class="row no-gutters">
+								<div class="col-12 col-sm-6 col-md-8">
+									<br><br><br><br><br><br><br><br><br><br><br><br><br>
+									<font size=6 color="white">No solo encuentras ropa si no tu estilo</font>
+								</div>
+								<div class="col-6 col-md-4">
+
+									<div class="modal-dialog text-center">
+										<div class="col-sm-8 main-section">
+											<div class="modform">
+												<div class="col-12 user-img">
+													<img src="images/user.png" />
+												</div>
+												<form action="ruta.php" method="POST">
+
+													<div class="form-group">
+														<input type="text" name="nombres" class="form-input" required
+															placeholder="Nombres y Apellidos" />
+													</div>
+													<div class="form-group">
+														<input type="tel" name="telefonos" class="form-input" required
+															placeholder="Teléfono">
+													</div>
+
+													<div class="form-group">
+														<input type="email" name="emails" class="form-input" required
+															placeholder="Correo Electrónico" />
+													</div>
+													<button type="submit" class="btn btn-danger"><i
+															class="fas fa-sign-in-alt"></i> Solicitalo YA </button>
+												</form>
+												<br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+							// Slideshow 4
+							$("#slider4").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: false,
+								speed: 400,
+								namespace: "callbacks",
+								before: function () {
+									$('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+									$('.events').append("<li>after event fired.</li>");
+								}
+							});
+
+						});
+					</script>
+					<!--banner Slider starts Here-->
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- //banner -->
+	<!--Ventana - Registro "Modal "-->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modform">
+				<div class="modal-header">
+					<h2 class="modal-title text-danger" id="exampleModalLabel">INICIAR SESIÓN</h2>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group row">
+							<label for="staticEmail" class="col-sm-2 col-form-label">Correo
+								Electrónico</label>
+							<div class="col-sm-10">
+								<input type="text" readonly class="form-control" id="staticEmail"
+									value="goldenstreet@goldenstreet.com">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger">INGRESAR</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="w3ls-footer-grids" id="contact">
+		<div class="container">
+			<div class="col-md-3 w3l-footer one">
+				<h3>UFTRANS</h3>
+				<p> Transporte a tu Universidad desde tu CELULAR</p>
+				<p class="adam">- Manuela Jimenez, CEO</p>
+			</div>
+
+			<div class="col-md-3 w3l-footer two">
+				<h3>Redes Sociales</h3>
+				<ul>
+					<li><a href="https://www.facebook.com/1608315162646317/"><i class="fa fa-facebook"></i>Facebook</a>
+					</li>
+					<li><a href="https://twitter.com/UfTrans"><i class="fa fa-twitter"></i>Twitter</a></li>
+					<li><a href="https://instagram.com/uf.trans?igshid=q60oy356hbd8"><i
+								class="fa fa-instagram"></i>Instagram</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3l-footer three">
+				<h3>Información de Contácto</h3>
+				<ul>
+					<li><i class="fa fa-phone"></i>
+						<p>+57 318 490 80 66 - +57 317 435 90 77</p>
+					</li>
+					<li><i class="fa fa-envelope-o"></i><a href="">Contactenos@uftrans.com</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="copy-right-grids">
+		<div class="container">
+			<div class="copy-left">
+				<p class="footer-gd">© 2019 UFTRANS | Design by <a href="" target="_blank">UFT</a></p>
+			</div>
+		</div>
+	</div>
+	</footer>
+	<!-- //footer -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script src="js/jarallax.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+</body>
+
+</html>
